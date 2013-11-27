@@ -1,0 +1,247 @@
+{
+  "@": {
+    "xmlns": "http://ec2.amazonaws.com/doc/2012-12-01/"
+  },
+  "requestId": "70464dc7-9698-48d5-8af6-2456d61dd451",
+  "reservationSet": {
+    "item": [{
+      "reservationId": "r-57c9a11b",
+      "ownerId": "065432680525",
+      "groupSet": {},
+      "instancesSet": {
+        "item": {
+          "instanceId": "i-a9347ae6",
+          "imageId": "ami-8e987ef9",
+          "instanceState": {
+            "code": "16",
+            "name": "running"
+          },
+          "privateDnsName": "ip-172-31-5-201.eu-west-1.compute.internal",
+          "dnsName": "ec2-54-194-89-74.eu-west-1.compute.amazonaws.com",
+          "reason": {},
+          "keyName": "backend-sec",
+          "amiLaunchIndex": "1",
+          "productCodes": {},
+          "instanceType": "m1.small",
+          "launchTime": "2013-11-27T16:12:17.000Z",
+          "placement": {
+            "availabilityZone": "eu-west-1c",
+            "groupName": {},
+            "tenancy": "default"
+          },
+          "kernelId": "aki-71665e05",
+          "monitoring": {
+            "state": "disabled"
+          },
+          "subnetId": "subnet-7c0ef516",
+          "vpcId": "vpc-7f0ef515",
+          "privateIpAddress": "172.31.5.201",
+          "ipAddress": "54.194.89.74",
+          "sourceDestCheck": "true",
+          "groupSet": {
+            "item": {
+              "groupId": "sg-a27871c0",
+              "groupName": "masterbackend"
+            }
+          },
+          "architecture": "x86_64",
+          "rootDeviceType": "ebs",
+          "rootDeviceName": "/dev/sda1",
+          "blockDeviceMapping": {
+            "item": {
+              "deviceName": "/dev/sda1",
+              "ebs": {
+                "volumeId": "vol-859589d0",
+                "status": "attached",
+                "attachTime": "2013-11-27T16:12:21.000Z",
+                "deleteOnTermination": "true"
+              }
+            }
+          },
+          "virtualizationType": "paravirtual",
+          "clientToken": {},
+          "tagSet": {
+            "item": [{
+              "key": "Version",
+              "value": "1.4.0"
+            }, {
+              "key": "Name",
+              "value": "masterbackend-1.4.0-gunbfung"
+            }, {
+              "key": "Environment",
+              "value": "prod"
+            }, {
+              "key": "Purpose",
+              "value": "masterbackend"
+            }]
+          },
+          "hypervisor": "xen",
+          "networkInterfaceSet": {
+            "item": {
+              "networkInterfaceId": "eni-848cdfc2",
+              "subnetId": "subnet-7c0ef516",
+              "vpcId": "vpc-7f0ef515",
+              "description": {},
+              "ownerId": "065432680525",
+              "status": "in-use",
+              "macAddress": "0a:4a:92:fc:e8:7b",
+              "privateIpAddress": "172.31.5.201",
+              "privateDnsName": "ip-172-31-5-201.eu-west-1.compute.internal",
+              "sourceDestCheck": "true",
+              "groupSet": {
+                "item": {
+                  "groupId": "sg-a27871c0",
+                  "groupName": "masterbackend"
+                }
+              },
+              "attachment": {
+                "attachmentId": "eni-attach-76ac4c38",
+                "deviceIndex": "0",
+                "status": "attached",
+                "attachTime": "2013-11-27T16:12:17.000Z",
+                "deleteOnTermination": "true"
+              },
+              "association": {
+                "publicIp": "54.194.89.74",
+                "publicDnsName": "ec2-54-194-89-74.eu-west-1.compute.amazonaws.com",
+                "ipOwnerId": "amazon"
+              },
+              "privateIpAddressesSet": {
+                "item": {
+                  "privateIpAddress": "172.31.5.201",
+                  "privateDnsName": "ip-172-31-5-201.eu-west-1.compute.internal",
+                  "primary": "true",
+                  "association": {
+                    "publicIp": "54.194.89.74",
+                    "publicDnsName": "ec2-54-194-89-74.eu-west-1.compute.amazonaws.com",
+                    "ipOwnerId": "amazon"
+                  }
+                }
+              }
+            }
+          },
+          "ebsOptimized": "false"
+        }
+      }
+    }, {
+      "reservationId": "r-b5c9a1f9",
+      "ownerId": "065432680525",
+      "groupSet": {},
+      "instancesSet": {
+        "item": {
+          "instanceId": "i-02ec614e",
+          "imageId": "ami-8e987ef9",
+          "instanceState": {
+            "code": "16",
+            "name": "running"
+          },
+          "privateDnsName": "ip-172-31-2-73.eu-west-1.compute.internal",
+          "dnsName": "ec2-54-194-89-21.eu-west-1.compute.amazonaws.com",
+          "reason": {},
+          "keyName": "backend-sec",
+          "amiLaunchIndex": "0",
+          "productCodes": {},
+          "instanceType": "m1.small",
+          "launchTime": "2013-11-27T16:23:01.000Z",
+          "placement": {
+            "availabilityZone": "eu-west-1c",
+            "groupName": {},
+            "tenancy": "default"
+          },
+          "kernelId": "aki-71665e05",
+          "monitoring": {
+            "state": "disabled"
+          },
+          "subnetId": "subnet-7c0ef516",
+          "vpcId": "vpc-7f0ef515",
+          "privateIpAddress": "172.31.2.73",
+          "ipAddress": "54.194.89.21",
+          "sourceDestCheck": "true",
+          "groupSet": {
+            "item": {
+              "groupId": "sg-a37871c1",
+              "groupName": "mobilebackend"
+            }
+          },
+          "architecture": "x86_64",
+          "rootDeviceType": "ebs",
+          "rootDeviceName": "/dev/sda1",
+          "blockDeviceMapping": {
+            "item": {
+              "deviceName": "/dev/sda1",
+              "ebs": {
+                "volumeId": "vol-6c978b39",
+                "status": "attached",
+                "attachTime": "2013-11-27T16:23:04.000Z",
+                "deleteOnTermination": "true"
+              }
+            }
+          },
+          "virtualizationType": "paravirtual",
+          "clientToken": {},
+          "tagSet": {
+            "item": [{
+              "key": "Purpose",
+              "value": "mobilebackend"
+            }, {
+              "key": "Environment",
+              "value": "prod"
+            }, {
+              "key": "Name",
+              "value": "mobilebackend-1.4.0-broogsneeze"
+            }, {
+              "key": "Version",
+              "value": "1.4.0"
+            }]
+          },
+          "hypervisor": "xen",
+          "networkInterfaceSet": {
+            "item": {
+              "networkInterfaceId": "eni-ecb3e0aa",
+              "subnetId": "subnet-7c0ef516",
+              "vpcId": "vpc-7f0ef515",
+              "description": {},
+              "ownerId": "065432680525",
+              "status": "in-use",
+              "macAddress": "0a:ae:3f:d3:10:46",
+              "privateIpAddress": "172.31.2.73",
+              "privateDnsName": "ip-172-31-2-73.eu-west-1.compute.internal",
+              "sourceDestCheck": "true",
+              "groupSet": {
+                "item": {
+                  "groupId": "sg-a37871c1",
+                  "groupName": "mobilebackend"
+                }
+              },
+              "attachment": {
+                "attachmentId": "eni-attach-37ac4c79",
+                "deviceIndex": "0",
+                "status": "attached",
+                "attachTime": "2013-11-27T16:23:01.000Z",
+                "deleteOnTermination": "true"
+              },
+              "association": {
+                "publicIp": "54.194.89.21",
+                "publicDnsName": "ec2-54-194-89-21.eu-west-1.compute.amazonaws.com",
+                "ipOwnerId": "amazon"
+              },
+              "privateIpAddressesSet": {
+                "item": {
+                  "privateIpAddress": "172.31.2.73",
+                  "privateDnsName": "ip-172-31-2-73.eu-west-1.compute.internal",
+                  "primary": "true",
+                  "association": {
+                    "publicIp": "54.194.89.21",
+                    "publicDnsName": "ec2-54-194-89-21.eu-west-1.compute.amazonaws.com",
+                    "ipOwnerId": "amazon"
+                  }
+                }
+              }
+            }
+          },
+          "ebsOptimized": "false"
+        }
+      }
+    }]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "@": {
+    "xmlns": "http://ec2.amazonaws.com/doc/2012-12-01/"
+  },
+  "requestId": "f5df046c-c094-46b3-a519-7a48d395b601",
+  "reservationId": "r-a07bf0ef",
+  "ownerId": "065432680525",
+  "groupSet": {},
+  "instancesSet": {
+    "item": {
+      "instanceId": "i-503bbc1c",
+      "imageId": "ami-8e987ef9",
+      "instanceState": {
+        "code": "0",
+        "name": "pending"
+      },
+      "privateDnsName": "ip-172-31-1-56.eu-west-1.compute.internal",
+      "dnsName": {},
+      "reason": {},
+      "amiLaunchIndex": "0",
+      "productCodes": {},
+      "instanceType": "m1.small",
+      "launchTime": "2013-11-28T00:28:55.000Z",
+      "placement": {
+        "availabilityZone": "eu-west-1c",
+        "groupName": {},
+        "tenancy": "default"
+      },
+      "kernelId": "aki-71665e05",
+      "monitoring": {
+        "state": "disabled"
+      },
+      "subnetId": "subnet-7c0ef516",
+      "vpcId": "vpc-7f0ef515",
+      "privateIpAddress": "172.31.1.56",
+      "sourceDestCheck": "true",
+      "groupSet": {
+        "item": {
+          "groupId": "sg-68ef1e07",
+          "groupName": "default"
+        }
+      },
+      "stateReason": {
+        "code": "pending",
+        "message": "pending"
+      },
+      "architecture": "x86_64",
+      "rootDeviceType": "ebs",
+      "rootDeviceName": "/dev/sda1",
+      "blockDeviceMapping": {},
+      "virtualizationType": "paravirtual",
+      "clientToken": {},
+      "hypervisor": "xen",
+      "networkInterfaceSet": {
+        "item": {
+          "networkInterfaceId": "eni-0ea4f748",
+          "subnetId": "subnet-7c0ef516",
+          "vpcId": "vpc-7f0ef515",
+          "description": {},
+          "ownerId": "065432680525",
+          "status": "in-use",
+          "macAddress": "0a:e3:eb:63:a3:01",
+          "privateIpAddress": "172.31.1.56",
+          "privateDnsName": "ip-172-31-1-56.eu-west-1.compute.internal",
+          "sourceDestCheck": "true",
+          "groupSet": {
+            "item": {
+              "groupId": "sg-68ef1e07",
+              "groupName": "default"
+            }
+          },
+          "attachment": {
+            "attachmentId": "eni-attach-c798b48b",
+            "deviceIndex": "0",
+            "status": "attaching",
+            "attachTime": "2013-11-28T00:28:55.000Z",
+            "deleteOnTermination": "true"
+          },
+          "privateIpAddressesSet": {
+            "item": {
+              "privateIpAddress": "172.31.1.56",
+              "privateDnsName": "ip-172-31-1-56.eu-west-1.compute.internal",
+              "primary": "true"
+            }
+          }
+        }
+      },
+      "ebsOptimized": "false"
+    }
+  }
+}
