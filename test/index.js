@@ -54,6 +54,18 @@ describe('aws-lib-ec2', function() {
       })
     })
   })
+  describe('associateAddress', function() {
+    it('should associate an elastic ip with an instance', function(done) {
+      var opts = {
+        publicIP: '54.225.119.151',
+        instanceId: instanceId1
+      }
+      ec2.associateAddress(opts, function(err, res) {
+        assert.ok(res.success)
+        done()
+      })
+    })
+  })
   describe('terminateInstances', function() {
     it('should terminate instances', function(done) {
       var ids = [instanceId1, instanceId2].sort()
