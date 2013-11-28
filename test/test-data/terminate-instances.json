@@ -1,0 +1,29 @@
+{
+  "@": {
+    "xmlns": "http://ec2.amazonaws.com/doc/2012-12-01/"
+  },
+  "requestId": "2b5d009f-ba34-4ef1-a2e9-38fc409b3787",
+  "instancesSet": {
+    "item": [{
+      "instanceId": "i-fdd28385",
+      "currentState": {
+        "code": "32",
+        "name": "shutting-down"
+      },
+      "previousState": {
+        "code": "0",
+        "name": "pending"
+      }
+    }, {
+      "instanceId": "i-3708bb50",
+      "currentState": {
+        "code": "32",
+        "name": "shutting-down"
+      },
+      "previousState": {
+        "code": "0",
+        "name": "pending"
+      }
+    }]
+  }
+}

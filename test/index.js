@@ -6,25 +6,47 @@ based on EC2 API Version 2013-10-15
 var assert = require('assert')
 var ec2 = require('../lib/index')()
 
+var instanceId1 = null
+var instanceId2 = null
+
 describe('aws-lib-ec2', function() {
+  describe('launchInstances', function() {
+    it('should launch an instance', function(done) {
+      var opts = {
+        imageId: 'ami-a73264ce',
+        instanceType: 't1.micro'
+      }
+      ec2.launchInstances(opts, function(err, res) {
+        assert.ok(res.instanceId)
+        instanceId1 = res.instanceId
+        ec2.launchInstances(opts, function(err, res) {
+          instanceId2 = res.instanceId
+          done()
+        })
+      })
+    })
+  })
   describe('describeInstances', function() {
     it('should return instance details', function(done) {
-      var ids = ['i-a9347ae6', 'i-02ec614e']
+      var ids = [instanceId1, instanceId2].sort()
       ec2.describeInstances(ids, function(err, res) {
-        res.forEach(function(each, i) {
-          assert.equal(each.instanceId, ids[i])
-        })
+        var resIds = res.map(function(each) {
+          return each.instanceId
+        }).sort()
+        assert.deepEqual(resIds, ids)
         done()
       })
     })
   })
-  describe('launchInstances', function() {
-    it('should launch an instance', function(done) {
-      var opts = {
-        imageId: 'ami-8e987ef9'
-      }
-      ec2.launchInstances(opts, function(err, res) {
-        console.log(err, JSON.stringify(res))
+  describe('terminateInstances', function() {
+    it('should terminate instances', function(done) {
+      var ids = [instanceId1, instanceId2].sort()
+      ec2.terminateInstances(ids, function(err, res) {
+        var resIds = res.map(function(each) {
+          return each.instanceId
+        }).sort()
+        assert.deepEqual(resIds, ids)
+        done()
       })
     })
   })
