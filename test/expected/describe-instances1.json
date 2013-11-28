@@ -10,12 +10,7 @@
   "keyName": "backend-sec",
   "instanceType": "m1.small",
   "launchTime": "2013-11-27T16:12:17.000Z",
-  "placement": {
-    "availabilityZone": "eu-west-1c",
-    "groupName": {},
-    "tenancy": "default"
-  },
-  "kernelId": "aki-71665e05",
+  "availabilityZone": "eu-west-1c",
   "monitoring": {
     "state": "disabled"
   },

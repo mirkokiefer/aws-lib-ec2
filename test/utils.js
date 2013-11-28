@@ -18,14 +18,10 @@ describe('utils', function() {
   })
   describe('mapLaunchInstancesResponse', function() {
     it('should extract relevant details', function() {
+      var expected = require('./expected/launch-instances')
       var testData = require('./test-data/launch-instances')
       var result = utils.mapLaunchInstancesResponse(testData)
-      assert.ok(result.instanceId)
-      assert.ok(result.launchTime)
-      assert.ok(result.instanceState)
-      assert.ok(result.privateDnsName)
-      assert.ok(result.privateIpAddress)
-      console.log(JSON.stringify(result))
+      assert.deepEqual(JSON.stringify(result), JSON.stringify(expected))
     })
   })
 })
