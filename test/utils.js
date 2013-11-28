@@ -24,4 +24,12 @@ describe('utils', function() {
       assert.deepEqual(JSON.stringify(result), JSON.stringify(expected))
     })
   })
+  describe('mapInstanceStatusResponse', function() {
+    it('should extract relevant details', function() {
+      var expected = require('./expected/instance-status')
+      var testData = require('./test-data/instance-status')
+      var result = utils.mapInstanceStatusResponse(testData)
+      assert.deepEqual(JSON.stringify(result), JSON.stringify(expected))
+    })
+  })
 })

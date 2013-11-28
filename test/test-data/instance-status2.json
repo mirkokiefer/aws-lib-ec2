@@ -1,0 +1,59 @@
+{
+  "@": {
+    "xmlns": "http://ec2.amazonaws.com/doc/2012-12-01/"
+  },
+  "requestId": "5c21ad78-6f19-4c55-808b-bf216720ddbb",
+  "instanceStatusSet": {
+    "item": [{
+      "instanceId": "i-74136010",
+      "availabilityZone": "us-east-1a",
+      "instanceState": {
+        "code": "16",
+        "name": "running"
+      },
+      "systemStatus": {
+        "status": "ok",
+        "details": {
+          "item": {
+            "name": "reachability",
+            "status": "passed"
+          }
+        }
+      },
+      "instanceStatus": {
+        "status": "ok",
+        "details": {
+          "item": {
+            "name": "reachability",
+            "status": "passed"
+          }
+        }
+      }
+    }, {
+      "instanceId": "i-01a78d65",
+      "availabilityZone": "us-east-1a",
+      "instanceState": {
+        "code": "16",
+        "name": "running"
+      },
+      "systemStatus": {
+        "status": "initializing",
+        "details": {
+          "item": {
+            "name": "reachability",
+            "status": "initializing"
+          }
+        }
+      },
+      "instanceStatus": {
+        "status": "initializing",
+        "details": {
+          "item": {
+            "name": "reachability",
+            "status": "initializing"
+          }
+        }
+      }
+    }]
+  }
+}

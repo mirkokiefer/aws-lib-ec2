@@ -38,6 +38,22 @@ describe('aws-lib-ec2', function() {
       })
     })
   })
+  describe('instanceStatus', function() {
+    it('should return instance status', function(done) {
+      var ids = [instanceId1, instanceId2].sort()
+      ec2.instanceStatus(ids, function(err, res) {
+        if (!res && !err) {
+          console.log('skip test')
+          return done()
+        }
+        var resIds = res.map(function(each) {
+          return each.instanceId
+        }).sort()
+        assert.deepEqual(resIds, ids)
+        done()
+      })
+    })
+  })
   describe('terminateInstances', function() {
     it('should terminate instances', function(done) {
       var ids = [instanceId1, instanceId2].sort()

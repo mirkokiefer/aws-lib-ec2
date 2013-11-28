@@ -1,0 +1,21 @@
+{
+  "instanceId": "i-74136010",
+  "instanceState": {
+    "code": "16",
+    "name": "running"
+  },
+  "systemStatus": {
+    "status": "initializing",
+    "details": {
+      "name": "reachability",
+      "status": "initializing"
+    }
+  },
+  "instanceStatus": {
+    "status": "initializing",
+    "details": {
+      "name": "reachability",
+      "status": "initializing"
+    }
+  }
+}
